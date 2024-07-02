@@ -11,11 +11,17 @@ dockerhub网站，常用的docker镜像搜索发布网站。[https://hub.docker.
 ## 2. 启动容器
 
 - 运行：docker run
+
   -d  启动容器后在后台运行
+
   -p  88:80 端口映射，将docker容器80端口映射到主机88端口
+
   -v  /usr/html/:/usr/nginx/html 存储映射
+
   -v  ngconf:/usr/nginx/conf 卷映射
+
   -e  设置容器运行的环境变量，具体开放的环境变量，以docker镜像说明文档为准
+
   —name  自定义容器名称&#x20;
 - 查看：docker ps
 - 停止：docker stop
@@ -24,8 +30,10 @@ dockerhub网站，常用的docker镜像搜索发布网站。[https://hub.docker.
 - 状态：docker stats
 - 日志：docker logs
 - 删除：docker rm
+
   docker rm -f \$(docker ps -aq) 可以快速删除所有容器，测试阶段特别好用。
 - 进入：docker exec
+
   docker exec -it mynginx /bin/bash  以交互模式进入容器
 - 容器信息：docker inspect
 
@@ -39,37 +47,55 @@ echo 222 > /usr/bin/myhtml/index.html
 ## 4. 保存分享
 
 - 提交文件修改
+
   docker commit -a "hah" -m "update" 01d mynginx:v1.0.0
+
   将修改后的容器提交，形成一个新的镜像
 - 保存镜像
+
   docker save -o mynginx.tar  mynginx
+
   将docker镜像保存为一个.tar的文件
 - 加载镜像文件
+
   docker load -i mynginx.tar
+
   加载tar文件格式的镜像
 
 ## 5. 存储管理
 
 - 目录挂载
+
   外部自动创建目录
+
   -v /app/nghtml:/usr/share/nginx/html
 - 卷挂载
+
   自定创建卷，同步容器内部的文件到卷
+
   -v ngconf:/ect/nginx
 - 卷管理
+
   列出所有卷：docker volume ls
+
   查看具体卷的细节：docker volume inspect ngconf&#x20;
 
 ## 6. 网络管理
 
 - 查看网络
+
   docker network ls
 - 创建网络
+
   docker network create netng
 - 创建容器指定网络
+
   docker run -d --name app01 --network netng -p 99:80 nginx
+
   docker run -d --name app02 --network netng -p 99:80 nginx
+
   docker exec -it app01
+
   curl [http://app02:99](http://app02:99 "http://app02:99")
 
 ## 7. 最佳实践
