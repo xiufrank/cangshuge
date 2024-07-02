@@ -13,6 +13,7 @@ dockerhub网站，常用的docker镜像搜索发布网站。[https://hub.docker.
 - 运行：docker run
 
   -d  启动容器后在后台运行
+  
   -p  88:80 端口映射，将docker容器80端口映射到主机88端口
 
   -v  /usr/html/:/usr/nginx/html 存储映射
@@ -34,6 +35,7 @@ dockerhub网站，常用的docker镜像搜索发布网站。[https://hub.docker.
 - 进入：docker exec
 
   docker exec -it mynginx /bin/bash  以交互模式进入容器
+  
 - 容器信息：docker inspect
 
 ## 3. 修改页面
