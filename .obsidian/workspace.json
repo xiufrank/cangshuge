@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "01f86c1d69d8270c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git.ignore.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "git.ignore.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "git.ignore.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "git.ignore.md"
               }
             }
           }
@@ -147,10 +160,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a61788ee914d6b20",
+  "active": "01f86c1d69d8270c",
   "lastOpenFiles": [
+    "README.md",
+    "git.ignore.md",
     "技术文章/常用操作之Docker.md",
-    "技术文章/服务器配置密钥的登陆.md",
-    "README.md"
+    "技术文章/服务器配置密钥的登陆.md"
   ]
 }
