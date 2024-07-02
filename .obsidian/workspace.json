@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git.ignore.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git.ignore.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git.ignore.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git.ignore.md"
+                "file": "README.md"
               }
             }
           }
@@ -162,8 +162,9 @@
   },
   "active": "01f86c1d69d8270c",
   "lastOpenFiles": [
-    "README.md",
     "git.ignore.md",
+    "git.ignore",
+    "README.md",
     "技术文章/常用操作之Docker.md",
     "技术文章/服务器配置密钥的登陆.md"
   ]
